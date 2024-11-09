@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascade Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--Navigation section starts here-->
+
+    <nav
+      class="navbar navbar-expand-lg bg-secondary-subtle position-sticky top-0"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-medium" href="#"
+          >Cascade
+          <span><strong class="text-danger fw-bold"> Cafe</strong></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active">MENUS </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"> CATERING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">BBQ BOX</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >SUPPER CLUB</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+              >
+                LOYALTY
+              </a>
+            </li>
+            <li class="nav-item border border-dark">
+              <a class="nav-link active" aria-current="page" href="#"
+                >ORDER ONLINE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation section ends here-->
+
+    <!--Hero section starts here-->
+
+    <section class="hero--section mt-1">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="food 1.jpg"
+              style="width: 100%; height: 700px; object-fit: cover"
+              class="d-block"
+              alt="Food tray"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-1">CHIEF'S SPECIAL</h1>
+              <p class="fw-bold fs-5">
+                Every month we feature a new fancy Joem's Kitchen Chef Special.
+                Don't miss November's Pomegranate Glazed Lamb Ribs. Available
+                MON-THURS. Don't miss out...
+              </p>
+              <button
+                class="text-warning fw-bold fs-5 bg-transparent border-warning special--button"
+              >
+                SEE THE SPECIALS
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="food 3.jpg"
+              style="width: 100%; height: 700px; object-fit: cover"
+              class="d-block w-100"
+              alt="Food tray"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-1">EVENT CATERING</h1>
+              <p class="fw-bold fs-5">
+                Got a celebration coming up and need a hand--or maybe just a
+                whole platter of ribs? No matter the event type, size or
+                style,we got you! Enjoy our catering truck (or team) at your
+                next event. Planning your big bash has never been this easy.
+                Let's make this one for the history books-- just don't blame us
+                when people ask for seconds!...
+              </p>
+              <button
+                class="text-warning fw-bold fs-5 bg-transparent border-warning explore--button"
+              >
+                EXPLORE EVENT CATERING
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="food 2 (2).jpg"
+              style="width: 100%; height: 700px; object-fit: cover"
+              class="d-block w-100"
+              alt="Burger image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-1">SUPPER CLUB</h1>
+              <p class="fw-bold fs-5">
+                A fancy 4-course Joem Kitchen dine-in experience that will leave
+                you up in smoke. A smoky feast of the seven fishes in December,
+                the french Joem Kitchen connection in January, and a romantic
+                Italian American menu you won't soon forget in Febuary.
+              </p>
+              <button
+                class="text-warning fw-bold fs-5 bg-transparent border-warning ticket--button"
+              >
+                GET YOUR TICKETS
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Hero section ends here-->
+
+    <!--Menu section stars here-->
+    <section class="Menu--section">
+      <div>
+        <h1
+          class="d-flex justify-content-center mb-2 fw-bold gap-3 text-danger-emphasis header-section"
+        >
+          MENUS
+          <span><i class="fas fa-caret-square-down"></i></span>
+        </h1>
+        <p class="fw-bold">
+          A culinary tour of BBQ traditions from around this great nation and
+          this beautiful planet. 1.8 million years ago, humans first began
+          cooking meat with fire. For some reason, this hasn’t led to world
+          peace, but we’re pretty sure if we fire up enough BBQ, it will.
+        </p>
+      </div>
+      <div
+        class="d-flex flex-wrap justify-content-center my-5 gap-3 border-dark"
+      >
+        <div>
+          <button class="bg-transparent menu--button fw-bold p-3">MENU</button>
+        </div>
+        <div>
+          <button class="bg-transparent menu--button fw-bold p-3">
+            SPECIALS
+          </button>
+        </div>
+        <div>
+          <button class="bg-transparent menu--button fw-bold p-3">
+            LAUNCH HAPPY HOUR
+          </button>
+        </div>
+        <div>
+          <button class="bg-transparent menu--button fw-bold p-3">
+            CATERING
+          </button>
+        </div>
+      </div>
+      <p class="fw-bold mb-5">
+        Check out our menu on Toast and follow us on social media to hear about
+        weekly specials and rotating "faux que" vegetarian offerings.
+      </p>
+      <p class="d-flex justify-content-center mb-5 order--btn">
+        <button class="bg-transparent fw-bold p-2 order--button">
+          ORDER NOW
+          <i class="ms-2 fw-medium fs-6 bi bi-arrow-right-square-fill"></i>
+        </button>
+      </p>
+    </section>
+
+    <!--Menu section ends here-->
+
+    <!--Food section starts here-->
+    <section class="Food--menu">
+      <h1
+        class="mb-4 food--alone text-danger-emphasis text-decoration-underline"
+      >
+        FOOD <span><i class="fas fa-hands-wash px-2 display-2"></i></span>
+      </h1>
+
+      <div class="Food--outline">
+        <div class="border border-dark food--section">
+          <img
+            class="food--image"
+            src="Cascade special rice.jpg"
+            alt="Special rice"
+          />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-3 d-flex gap-3">
+              SPECIAL RICE
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+
+            <p class="mt-2 fw-medium fs-6">
+              Rice made with lots and lots of veges, hot and delicious
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $45
+              <span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img
+            class="food--image"
+            src="Chicken and chips.jpg"
+            alt="Chicken and chips"
+          />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-4 d-flex gap-3">
+              CHX & CHIPS
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fw-medium fs-6">
+              served a well sauced, fried chicken with chips along side with
+              ketchup
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $15
+              <span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img class="food--image" src="Pasta with Shimps.jpg" alt="PASTA" />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-2 d-flex gap-3">
+              SPECIAL PASTA
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fw-medium fs-6">
+              Penne pasta tossed in creamy, cheesy and jerk seasoning
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $30<span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img class="food--image" src="Fried rice.jpg" alt="PASTA" />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-5 d-flex gap-3">
+              FRIED RICE
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fw-medium fs-6">
+              Fried rice made with fresh vegetables,beef liver and a little bit
+              of oil.
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $35<span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img
+            class="food--image"
+            src="Banga and starch.jpg"
+            alt="BANGA SOUP"
+          />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-3 d-flex gap-3">
+              BANGA SOUP
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fw-medium fs-6">
+              Soup made from palm fruit along side with native ingredients.
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $45<span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img class="food--image" src="Okro soup.jpg" alt="Okro Soup" />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-4 d-flex gap-3">
+              OKRO SOUP
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fw-medium fs-6">
+              Okra soup made with lots of fish and meat, usually pepperish but
+              awesome
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $58<span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+        <div class="border border-dark food--section">
+          <img
+            class="food--image"
+            src="Vegtable soup.jpg"
+            alt="Vegetable Soup"
+          />
+          <div class="p-2 mt-5">
+            <h3 class="mb-4 fs-2 px-5 d-flex gap-3">
+              LEAF SOUP
+              <span><i class="fas fa-info-circle fs-5 title--icon"></i></span>
+            </h3>
+            <p class="mt-2 fe-bold fs-6">
+              A special soup prepared using vegetables and leaf vegetables as
+              primary ingredients.
+            </p>
+            <p class="mt-5 px-3 fs-2 fw-bold">
+              $37<span><i class="bi bi-bag-plus-fill food--icons"></i></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Food section ends here-->
+
+      <!--Snacks section starts here-->
+      <section class="Snacks--section">
+        <h1
+          class="d-flex gap-4 snacks--alone mb-4 text-danger-emphasis text-decoration-underline"
+        >
+          SNACKS <span><i class="text-danger far fa-grin-hearts"></i></span>
+        </h1>
+        <div class="snacks--content">
+          <div>
+            <img class="Snacks--images" src="Shawarma.jpg" alt="Shawarma" />
+            <h3 class="mb-2 mt-3 fs-1 d-flex gap-3">
+              Shawarma
+              <span><i class="fas fa-info-circle fs-5 Snacks--icon"></i></span>
+            </h3>
+            <p class="fs-5 fw-medium">
+              Chicken shawarma is made of marinated chicken, stacked on a
+              vertical spit and slowly roasted.
+            </p>
+            <p class="fs-2 price--section fw-semi-bold d-flex gap-3">
+              $25.00
+              <span
+                ><i class="bi bi-bag-plus-fill snacks--icons fs-4"></i
+              ></span>
+            </p>
+          </div>
+          <div>
+            <img class="Snacks--images" src="springroll.jpg" alt="springroll" />
+            <h3 class="mb-2 mt-3 fs-1 d-flex gap-3">
+              SPRINGROLL
+              <span><i class="fas fa-info-circle fs-5 Snacks--icon"></i></span>
+            </h3>
+            <p class="fs-6 fw-medium">
+              Crispy and golden on the outside, filled with a tantalizing mix of
+              vegetables and served with a savory dipping sauce.
+            </p>
+            <p
+              class="fs-3 price--section fw-semi-bold d-flex gap-3 price--icon"
+            >
+              $16.00
+              <span
+                ><i class="bi bi-bag-plus-fill snacks--icons fs-4"></i
+              ></span>
+            </p>
+          </div>
+          <div>
+            <img class="Snacks--images" src="Burger.jpg" alt="hamburger" />
+            <h3 class="mb-2 mt-3 fs-1">
+              HAMBURGER
+              <span><i class="fas fa-info-circle fs-5 Snacks--icon"></i></span>
+            </h3>
+            <p class="fs-6 fw-medium">
+              Savor the Napa Valley flavors with this Cabernet Butter Burger,
+              featuring caramelized onions and a rich wine-infused butter
+            </p>
+            <p class="fs-3 price--section fw-semi-bold d-flex gap-3">
+              $12.00
+              <span
+                ><i class="bi bi-bag-plus-fill snacks--icons fs-4"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Snacks section ends-->
+    </section>
+    <!--About section starts here-->
+    <section class="about--container">
+      <section class="about--section">
+        <img class="about--image" src="About photo.jpg" alt="Dinning setup" />
+        <div class="about--content">
+          <h1 class="d-flex justify-content-center mb-4 about--text">ABOUT.</h1>
+          <p class="fw-medium fs-6">
+            Located on a then-lonesome little corner under the Williamsburg
+            Bridge in Brooklyn, Cascade Cafe opened its doors on New Year’s Eve
+            twenty-two years ago. Owners Amayo William and Amayo Victory hosted
+            and bartended and ended most nights with a hand of cards and a
+            pitcher of margaritas. Chef Joyce Oghala and Hannah Iruvwe wrote a
+            daily menu committed to local, seasonal, sustainable foods, and
+            built relationships with the farmers in upstate New York and
+            surrounding regions most especially Mrs Robinna Amayo. Blessing
+            Imene was server and salad maker, scrawling the menu across table
+            after table, then jumping back behind the line to overdress a salad
+            when duty called.
+          </p>
+
+          <p class="fw-medium fs-6">
+            Cascade cafe's expansive bar, a place to sit and read and eat and
+            watch the world go by is the centerpiece of the room, a 90-year-old
+            Pullman dining car. Warm wood and aged enamel, like being in the
+            belly of a whale or the protected hold of a ship.
+          </p>
+          <p class="fw-medium fs-6">
+            From the outside, Cascade Cafe might have been mistaken for a modest
+            endeavor. But Cascade Cafe, open summer, spring, or snowstorm, has
+            become, with the help of all the people, staff as well as guests,
+            who continue to return to it, a room that glows from within. Over
+            twenty years later Cascade Cafe has carried on the traditions of its
+            early days. A place of occasion. A touchstone for a neighborhood.
+          </p>
+          <p class="executive--section">Executive Chef: Mr JOYCE OGHALA</p>
+          <hr />
+          <p>Sous Chefs: Mrs HANNAH IRYVWE</p>
+          <hr />
+          <p>General Manager: Mr AMAYO WILLIAM</p>
+          <hr />
+          <p>Service Director: Mr AMAYO VICTORY</p>
+          <hr />
+          <p>Service Manager: Mrs ROBINNA EBIGHOSELE</p>
+        </div>
+      </section>
+      <h2 class="finishing--text liam--font">
+        THE <span class="px-2 liam--text"> liam's </span>COLLECTIVE
+      </h2>
+      <p class="icons--part">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </p>
+    </section>
+    <!--About section ends here-->
+
+    <!--Form section starts here-->
+    <section class="Form--section">
+      <div class="Contact--section mt-3 mx-4">
+        <h3>CONTACT FORM</h3>
+        <!-- <form class="d-flex flex-column"> -->
+        <form>
+          <table>
+            <tr>
+              <td class="fw-medium">Full Name:</td>
+              <td>
+                <input class="p-1" type="text" placeholder="Enter full name" />
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-medium">Email address:</td>
+              <td>
+                <input
+                  class="p-1 mt-2"
+                  type="text"
+                  placeholder="Enter email address"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-medium">Message</td>
+              <td>
+                <input class="w-90 mt-2 p-2" type="text" placeholder="" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button>
+                  <input class="border border-o" type="Submit" />
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="social-section">
+        <nav>
+          <ul class="d-flex list--section">
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>LOCATION</li>
+            <li>AWARD</li>
+            <li>CAREERS</li>
+            <li>TERMS</li>
+            <li>PRIVACY</li>
+            <li>SIGNUP</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!--Form section ends-->
+
+    <!--Social media icon and nav bar section -->
+
+    <!--Social media section ends-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6ed74a8c63.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
