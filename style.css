@@ -109,8 +109,13 @@ h3 {
 .food--section {
   background-color: white;
   max-width: 20em;
-  height: 58vh;
+  /* height: 58vh; */
   border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .food--section {
+    height: 58vh;
+  }
 }
 .food--image {
   height: 15rem;
